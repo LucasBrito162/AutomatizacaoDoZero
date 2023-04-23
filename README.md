@@ -18,4 +18,7 @@ Certifique-se de que o ChromeDriver esteja instalado em seu sistema, ou então v
 Para executar todos os testes, execute o seguinte comando:
 
 
+     **mvn test**
+
+
 
