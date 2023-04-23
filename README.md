@@ -18,7 +18,21 @@ Certifique-se de que o ChromeDriver esteja instalado em seu sistema, ou então v
 Para executar todos os testes, execute o seguinte comando:
 
 
-   <h5>mvn <font color="yellow">test</font></h5>
+     > mvn test
 
 
+Você também pode executar um teste específico usando o seguinte comando:
 
+
+    > mvn -Dtest=<nome_do_teste> test
+
+
+<h3>Estrutura do Projeto</h3>
+
+<h5>src/main/java:</h5> Contém as classes de suporte para o teste automatizado.
+<h5>src/test/java:</h5> Contém as classes de teste JUnit.
+<h5>pom.xml: </h5>Contém as dependências do projeto e as configurações do Maven.
+
+<h2>Autor</h2>
+
+Este projeto foi criado por Lucas Brito. Se você tiver alguma dúvida ou sugestão, entre em contato através do Linkedin https://www.linkedin.com/in/lucasdebritonunes/
