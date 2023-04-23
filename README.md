@@ -1,7 +1,7 @@
 # AutomatizacaoDoZero
 Automatizando um site do começo ao fim utilizando Selenium com Java!
 
-                              <h1> BugBank Testes Automatizados </h1>
+  <h1>BugBank Testes Automatizados</h1>
 Este projeto contém testes automatizados para a aplicação web BugBank. Os testes foram escritos em Java, usando o framework JUnit e Selenium WebDriver.
 
     <h3>Instalação e Configuração</h3>
