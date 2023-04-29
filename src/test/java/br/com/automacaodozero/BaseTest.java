@@ -1,5 +1,6 @@
 package br.com.automacaodozero;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,16 @@ public class BaseTest {
    @After
     public void quit(){
         driver.quit();
+    }
+
+    public void waiting() {
+        try {
+            // Pausa a execução por 5 segundos
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            // Tratamento da exceção
+            e.printStackTrace();
+        }
     }
 
 }

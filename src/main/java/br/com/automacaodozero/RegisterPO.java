@@ -2,6 +2,7 @@ package br.com.automacaodozero;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class RegisterPO extends BasePO {
 
@@ -29,9 +30,9 @@ public class RegisterPO extends BasePO {
                 .sendKeys("R@nD0M#$");
     }
 
-    public void registerPasswordConfirm() {
+    public void registerPasswordConfirm(String confirmaSenha) {
         driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div[2]/div/div[2]/form/div[5]/div/input"))
-                .sendKeys("R@nD0M#$");
+                .sendKeys(confirmaSenha);
     }
 
     public void balanceButton() {
@@ -56,5 +57,21 @@ public class RegisterPO extends BasePO {
 
 
     }
+
+    public boolean confirmEyes(){
+        WebElement eyeOpen =driver.findElement(By.cssSelector("[alt='Icon Open Eye']"));
+        WebElement eyeClose =driver.findElement(By.cssSelector("[alt='Icon Close Eye']"));
+    
+        if(eyeOpen != eyeClose){
+            return true;
+
+
+        }else{
+            return false;
+        }
+    }
+
+  
+
 }
 
